@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="R Kelly">
+    <meta name="description" content="W6 Intro to JS">
+
+    <title>W6 | Intro to JS</title>
+</head>
+<body>
+    <h1>Week 6 Intro Demo | JavaScript</h1>
+
+    <script>
+        //everything inside of <script> tags MUST be witten in JAVASCRIPT
+
+        // creating (declaring) a variable -- keyword
+        var num1 = 10
+        var num2 = 7
+
+        // cannot use num1 or num2 until they have been assigned data (=)
+        // variable assignment --> DEFINITION
+
+        var sum = num1 + num2
+
+        //OUTPUT
+        //output display for testing --> console.log()
+        console.log(num1) //displaying 1, the stored value
+
+        /* console.log() is only fir the developer & testing 
+            to access the developer tool:
+            *hit F12 on Windows/PC
+        */ 
+
+        console.log(num1, num2, sum) //display multime values
+        console.log("hello world") //display message
+        console.log(num1 + " + " + num2 + " + " + sum) //traditional string message mixed with stored value
+
+        //literal strings --> these use `` not ''
+        //${VAR} displays stored value from var names
+        console.log(`${num1} + ${num2} = ${sum.toFixed(2)}`)
+
+        //output display for user --> alert()
+        //alert() --> print() in python
+        alert(`The sum is: ${sum}!`)
+
+        //escape sequences also work in strings " ", ' ', ` `
+        //\t --> tab space, \n --> new line
+
+        //INPUT --> gaining data from user
+        //prompt() --> input() in Pyhton
+        //prompt() always returns STRINGS -> cast as Number()
+        //assign return of prompt() to a var to use in rest of program
+        var tip = Number(prompt(`Hello World! \nThe sum is ${sum.toFixed(2)}! \nEnter a 
+        number to add as a tip: $`))
+
+        var total = sum + tip
+        alert(`your  total with tip in now: ${total.fixed(2)}`) 
+    
+    
+    </script>
+
+
+</body>
+</html>

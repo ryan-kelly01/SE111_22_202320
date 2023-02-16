@@ -13,91 +13,135 @@
     <title>Week 5 | Tables and Forms</title>
 </head>
 <h1>Birthday Party Registration Form</h1>
-<body>
+
     <!--Build your Table and Form here-->
     <form>
         <table>
-          <thead>Labels</thead>
-          <tbody>
+            <tr>
+                <th>Label</th>
+                <th>Form Fields</th>
+            </tr>
             <tr>
                 <td>
-                    <label type="text" for="gfirst">Parent/Gaurdian Name</label>
+                    <label for="gfirst">Parent/Gaurdian Name</label>
                 </td>
                 <td>
-                    <input type="text" for="gfirst" id="gfirst">
+                    <input type="text"  id="gfirst" placeholder="First Name"><br>
+                    <input type="text"  id="glast" placeholder="Last Name">
                 </td>
             </tr> 
+           
             <tr>
                 <td>
-                    <label type="text" for="cfirst">Childs Name</label>
+                    <label for="cfirst">Childs Name</label>
                 </td>
                 <td>
-                    <input type="text" for="cfirst" id-="cfirst">
+                    <input id="cfirst" placeholder="Childs First Name...">
                 </td>
             </tr>
+            
             <tr>
                 <td>
-                    <label type="text" for="age">Childs Age</label>
+                    <label for="age">Childs Age</label>
                 </td>
                 <td> 
-                    <input type="text" for="age" id="age">
+                    <input type="text" id="age">
                 </td>
             </tr>   
+           
             <tr>
                 <td>
-                    <label type="text" for="date"><b>Date and Time</b></label>
+                    <label for="date"><b>Date and Time</b></label>
                 </td>
                 <td>
-                    <input type="date" for="date" id="date">
+                    <input type="date" id="date">
+                </td>
+            </tr>
+           
+            <tr>
+                <td>
+                    <label for="time"> Time</label>
+                </td>
+                <td>
+                    <input type="time" id="time">
+                </td>
+            </tr>
+           
+            <tr>
+                <td>
+                    <label for="guests">Number of Guests</label>
+                </td>
+                <td>
+                    <input type="text">
                 </td>
             </tr>
             <tr>
                 <td>
-                    <label type="text" for="time"> Time</label>
+                    <label for="size"> Pick Size</label>
                 </td>
                 <td>
-                    <input type="time" for="time" id="time">
+                        <input type="radio" name="size" value="SM"> Sm
+                        <input type="radio" name="size" value="MD"> Med
+                        <input type="radio" name="size" value="LG"> Lg
                 </td>
-            </tr>
-            <tr>
-                <td>
-                    <label type="text" for="guests">Number of Guests</label>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label type="" for="size">Size</label>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label type="" for="drinks">Drinks</label>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label type="" for="cake">Cake</label>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label type="" for="colors">Color Scheme</label>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label type="" for="comments">Comments</label>
-                </td>
-            </tr>
-            
-
-            
-
-
                 
+            </tr>
+            
+            <tr>
+                <td>
+                    <label for="drink1">Select Drink</label><br>
+                    
+                </td>
+                <td>
+                    <input type="checkbox" name="drink1" value="coke">Coke<br>
+                    <input type="checkbox" name="drink1" value="sprite">Sprite<br>
+                    <input type="checkbox" name="drink1" value="fruitpunch">Fruit Punch<br>
+                    <input type="checkbox" name="drink1" value="lemonade">Lemonade<br>
+                    <input type="checkbox" name="drink1" value="icedtea">Iced Tea<br>
+                
+                </td>
+            </tr>
+           
+            <tr>
+                <td>
+                    <label for="cake">Cake Flavor</label>
+                </td>
+                <td>
+                    <select name="cake">
 
-
-          </tbody>
+                    <option value="chocholate">Chocholate</option>
+                    <option value="vanilla">Vanilla</option>
+                    <option value="brimng own">I'll bring my own</option>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="colors">Color Scheme</label>
+                </td>
+                
+                <td>
+                    <input type="color" name="colors">Choose a color scheme for the party
+                
+                </td>
+            </tr>
+           
+            <tr>
+                <td>
+                    <label for="comment">Additional Comments</label>
+                </td>
+                <td>
+                    <input type="text" placeholder="please add comments...">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="submit"></label>
+                </td>
+                <td>
+                    <input type="submit" value="Sumbit">
+                </td>
+             </tr>
+        
         </table>
 
 
@@ -107,11 +151,11 @@
 
 
 
-
+        <img src="images/Screenshot 2023-02-16 135634.png" alt="Validation">
 
 
     </form>
  
     
-</body>
+
 </html>
