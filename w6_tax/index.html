@@ -13,18 +13,22 @@
         var sum = Number(hourly * hours)
         console.log(`${hourly} * ${hours} = ${sum.toFixed(2)}`)
 
-        var tax = Number(prompt(`What is the tax rate (ex... 20% = 20.0)`))
-        var total = Number(sum * tax)
-        console.log(`${total.toFixed(2)})        
+        var tax = Number(prompt(`Tax Rate -> 20% - .2`))
+        var taxtotal = Number(sum * tax)
+        console.log(`${sum} * ${tax} = ${taxtotal.toFixed(2)}`)
 
+        var money = Number(sum - taxtotal)
+        console.log(`${money.toFixed(2)}`)
 
-
-
-
-
-
+        console.log(`Gross Pay: ${sum.toFixed(2)}`)
+        console.log(`Uncle Sam's Share: ${taxtotal.toFixed(2)}`)
+        console.log(`Net Pay: ${money.toFixed(2)}`)
+      
 
 
     </script>
+    <!-- Validation -->
+    <img src="images/Screenshot 2023-02-23 122954.png">
+
 </body>
 </html>
