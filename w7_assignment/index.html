@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--edit the meta tag below to hold YOUR name!-->
-    <meta name="author" content="__YOUR NAME HERE!__">
+    <meta name="author" content="__Ryan Kelly__">
     <meta name="description" content="Week 7 Assignment practicing Javascript & HTML">
     <title>Week 7 | Pay Form Calculator Assignment</title>
 </head>
@@ -18,22 +18,22 @@
    <!--each form element is separated by a break space (new line) -->
     <form>
         <label for="first">First Name: </label>
-        <input type="text" id="">
+        <input type="text" id="first">
 
         <br>
 
         <label for="last">Last Name: </label>
-        <input type="text" id="">
+        <input type="text" id="last">
 
         <br>
 
         <label for="hours">Hours Worked: </label>
-        <input type="text" id="">
+        <input type="text" id="hours">
 
         <br>
 
         <label for="rate">Hourly Rate: </label>
-        <input type="text" id="">
+        <input type="text" id="rate">
 
         <br>
 
@@ -42,7 +42,8 @@
 
 
         <!-- give the button below (that is the only form element without a label) an id of "enter-button"-->
-        <input type="button" id="" value="Enter">
+        <input type="button" id="enter-button" value="Enter">
+        
 
         <br>
         <br>
@@ -68,7 +69,7 @@
 
     <script>
         //edit the below statement to select the #enter-button id from the HTML file
-        document.querySelector().addEventListener(`click`, alertName)
+        document.querySelector(`#enter-button`).addEventListener(`click`, alertName)
         
         
 
@@ -81,21 +82,24 @@
             lname --> last name, #last
             hours --> hours worked, #hours
             rate --> hourly rate, #rate */
-            
+            var fname= document.querySelector(`#first`).value
+            var lname= document.querySelector(`#last`).value
+            var hours= document.querySelector(`#hours`).value
+            var rate= document.querySelector(`#rate`).value
 
 
             //console.log() all four values
             
-            console.log()
-            console.log()
-            console.log()
-            console.log()
+            console.log(fname)
+            console.log(lname)
+            console.log(hours)
+            console.log(rate)
 
             //add the first and last name values together and store into a new variable called 'full' holding the user's full name
-            var full 
+            var full= (`fname`,`lname`)
 
             //console.log() the full name value
-            console.log()
+            console.log(full)
 
 
             //convert both hours and rate to Number() data types
