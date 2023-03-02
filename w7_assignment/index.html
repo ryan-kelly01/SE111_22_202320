@@ -56,7 +56,6 @@
                     *below is where the form values (and new values processed by the js) will be displayed-->
             <p id="check" style="font-family:Courier New, monospace; width:220px; text-align:right;"></p>
         </div>
-
         <br>
         <br>
 
@@ -96,37 +95,48 @@
             console.log(rate)
 
             //add the first and last name values together and store into a new variable called 'full' holding the user's full name
-            var full= (`fname`,`lname`)
+            var full= (fname + lname)
 
             //console.log() the full name value
             console.log(full)
 
 
             //convert both hours and rate to Number() data types
-            
-
+            hours= Number=(hours)
+            rate= Number=(rate)
+            alert(`Hi there ${full}`)
 
             //NOTE: DO NOT MOVE ON UNTIL YOU ARE ABLE TO DISPLAY THE CORRECT VALUES! This is a practice in testing as you build! 
 
             //create gross, taxAmount, net variables and store corresponding data to them
             //use a tax percentage of 20% (.2)
-            
+            var gross = (hours * rate)
+            var taxAmount = (gross * .2 )
+            var net = (gross - taxAmount)
+
 
             //console.log() all three processed values, rounded to the second decimal place
-            console.log(.toFixed(2))
+            //console.log(.toFixed(2))
+            console.log(`Gross pay: $${gross.toFixed(2)}`)
+            console.log(`Uncle Sam's Cut: $${taxAmount.toFixed(2)}`)
+            console.log(`Net pay: $${net.toFixed(2)}`)
 
 
             //create a new variable called 'finalMessage' that holds the literal string value of the following, each value on a new line (use <br>): full name, hours worked*, hourly rate*   *--> rounded to the second decimal place 
-            var finalMessage = ``
+            var finalMessage
+            
+            
 
         
             //create a new var called 'info' and store the entire #info *HTML element* to it
-
+            var info = document.querySelector(`#info`)
+            sumbit.addEventListener(`click`, `alerthi`)
 
             //create a new var called 'num' and store the entire #check *HTML element* to it
-            
+            var num = querySelector(`#check`)
 
             //edit the innerHTML of the #info element (now the 'info' js var) to hold the value of 'finalMessage'
+           
 
 
 
@@ -140,16 +150,17 @@
         
             function submitNow(e)
             {
-
+                var button = document.querySelector9=(`#submit`)
+                sumbit.addEventListener(`click`, alert)
                 /*NOTE FOR TESTING:
                     *if written correctly, you will see an alert() with all info entered as well as processed!*/
 
                 alert(`${full}\nHOURS: ${hours}\nRATE: $${rate.toFixed(2)}\n\nGROSS PAY: $${gross.toFixed(2)}\nTAX AMOUNT: $${taxAmount.toFixed(2)}\nNET PAY: $${net.toFixed(2)}`)
-            }
+            }                }  
             
-        }
         
-    </script>
+        
+ </script>
     
 </body>
 </html>
