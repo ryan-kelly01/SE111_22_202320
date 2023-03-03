@@ -9,7 +9,9 @@
     <title>Week 7 | Pay Form Calculator Assignment</title>
 </head>
 <body>
-
+<!--NOTES: I do not think I did the whole assignment correctly but I've done what I can
+I got confused witht he buttons and how to make certian info go with certian info, I will continue
+to look at the resources and try to learn but this is what I can turn in now-->
     <!--title of the page-->
    <h1> Pay Calculator Form </h1>
 
@@ -76,11 +78,11 @@
         {
             //get each *value* from the form elements (first name, last name, hours worked, hourly rate) and store them into vars
 
-            /*USE THE FOLLOWING VARIABLE NAMES:
-            fname --> first name, #first
-            lname --> last name, #last
-            hours --> hours worked, #hours
-            rate --> hourly rate, #rate */
+            //*USE THE FOLLOWING VARIABLE NAMES:
+            //fname --> firstname, #first
+            //lname --> lastname, #last
+            //hours --> hoursworked, #hours
+            //rate --> hourlyrate, #rate */
             var fname= document.querySelector(`#first`).value
             var lname= document.querySelector(`#last`).value
             var hours= document.querySelector(`#hours`).value
@@ -95,7 +97,7 @@
             console.log(rate)
 
             //add the first and last name values together and store into a new variable called 'full' holding the user's full name
-            var full= (fname + lname)
+            var full = fname + ` ` + lname 
 
             //console.log() the full name value
             console.log(full)
@@ -123,30 +125,30 @@
 
 
             //create a new variable called 'finalMessage' that holds the literal string value of the following, each value on a new line (use <br>): full name, hours worked*, hourly rate*   *--> rounded to the second decimal place 
-            var finalMessage
+            //var finalMessage = 
             
             
 
         
             //create a new var called 'info' and store the entire #info *HTML element* to it
-            
-
+            var info = document.querySelector(`#info`)
             //create a new var called 'num' and store the entire #check *HTML element* to it
-            
-
+             
+            var num = document.querySelector(`#check`)
             //edit the innerHTML of the #info element (now the 'info' js var) to hold the value of 'finalMessage'
            
-
-
+            document.querySelector(`#info`).innerHTML = full
 
             //edit the innerHTML of the #check element (now the 'check' js var) to hold a literal string with the following values: gross pay, tax amount, net pay. All three values should be rounded to the second decimal place.  Use <br> to break onto a new line for each value
 
-
+            document.querySelector(`#check`).innerHTML = (`$${net.toFixed(2)}`)
+           
+            
+             
 
             //add a 'click' event listener to the #submit HTML element (HINT: this is the first step in the <script> )
             //when the #submit button is clicked, the submitNow function should run
-
-        
+            document.querySelector(`#submit`).addEventListener(`click`, alertName)  
             function submitNow(e)
             {
                 /*NOTE FOR TESTING:
