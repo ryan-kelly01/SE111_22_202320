@@ -2,14 +2,18 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Week 2 Files</title>
+<title>Week 9 Assignment | ARRAYS</title>
 <style type="text/css">
-	.border{border:1px solid black;}
+	div {
+		border:1px solid blue;
+		margin-bottom: 5px;
+	}
+	
 </style>
 </head>
 
 <body>
-</body>
+
 
 <script type="text/javascript">
 	//Use this Array of objects to complete the assignment.
@@ -23,6 +27,52 @@
 		{first:"Marion", last:"Cobretti", credit:"Cobra" }
 	]
 	
-</script>
+	console.log(people[0].first)
 
+	var body = document.querySelector(`body`)
+	console.log(body)
+	console.dir(body)
+
+	
+	for(let i = 0; i < people.length; i++)
+	{
+		var tempDiv = document.createElement(`div`)
+
+		tempDiv.setAttribute(`id`, i)
+
+		tempDiv.setAttribute(`class`, `blue`)
+
+
+		for(key in people[i])
+		{
+			var p = document.createElement(`p`)
+
+			var text = document.createTextNode(people[i][key])
+
+			p.appendChild(text)
+			tempDiv.appendChild(p)
+		}
+
+		body.appendChild(tempDiv)
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+</body>
 </html>
